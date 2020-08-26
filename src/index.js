@@ -7,7 +7,6 @@
  * All spec algorithm step numbers are based on https://fetch.spec.whatwg.org/commit-snapshots/ae716822cb3a61843226cd090eefc6589446c1d2/.
  */
 
-import { resolve as resolve_url } from 'url';
 import http from 'http';
 import https from 'https';
 import zlib from 'zlib';
