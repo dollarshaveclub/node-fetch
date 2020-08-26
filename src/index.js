@@ -68,10 +68,7 @@ export default function fetch(url, opts) {
 			// HTTP fetch step 5
 			if (fetch.isRedirect(res.statusCode)) {
 				// HTTP fetch step 5.2
-				const location = headers.get('Location');
-
-				// HTTP fetch step 5.3
-				const locationURL = location === null ? null : resolve_url(request.url, location);
+				const locationURL = headers.get('Location');
 
 				// HTTP fetch step 5.5
 				switch (request.redirect) {
